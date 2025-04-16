@@ -1,0 +1,88 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.obj-paragraph {
+  font-size: 1.5rem;
+}
+
+@font-face {
+  font-family: 'Get Schwifty';
+  src: url('./fonts/get_schwifty.ttf') format('truetype');
+}
+
+.font-new {
+  font-family: 'Get Schwifty', sans-serif;
+}
+
+.color-text-rick {
+  background-color: #0F0C29; 
+    color: #00FF00;
+    border: 2px solid #00FF00;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.color-text-rick:hover {
+  animation: glowRick 1s infinite alternate;
+  background-color: #0F0C29;
+  color: #00FF00;
+  border: 2px solid #00FF00;
+}
+
+@keyframes glowRick {
+  0% {
+    box-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00;
+  }
+  100% {
+    box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00;
+  }
+}
+
+.background-image {
+  background-image: url('https://wallpapercave.com/wp/wp2486401.jpg'); 
+  background-size: contain; 
+  background-position: center;  
+  height: 100%; 
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  
+}
+
+.read-the-docs {
+  color: #888;
+}
