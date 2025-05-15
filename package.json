@@ -2,11 +2,12 @@
   {
     "name": "mi-proyecto-rick-and-morty",
     "version": "1.0.0",
+    "homepage":"https://github.com/Juan-Marcano-dev/RickAndMorty-API",
     "repository": {
       "type": "git",
       "url": "https://github.com/Juan-Marcano-dev/RickAndMorty-API.git"
     },
-    "homepage":"https://github.com/Juan-Marcano-dev/RickAndMorty-API",
+    
   "scripts": {
     "dev": "vite",
     "build": "vite build",
