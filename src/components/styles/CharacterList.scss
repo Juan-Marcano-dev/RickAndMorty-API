@@ -1,0 +1,35 @@
+
+.color-text-rick {
+  background-color: #0F0C29; 
+  color: #00FF00;
+  border: 2px solid #00FF00;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  
+}
+
+.color-text-rick:hover {
+  animation: glowRick 1s infinite alternate;
+  background-color: #0F0C29;
+  color: #00FF00;
+  border: 2px solid #00FF00;
+}
+
+.font-new {
+  padding: 1px;
+}
+
+.pages {
+  
+}
+
+@keyframes glowRick {
+  0% {
+    box-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00;
+  }
+  100% {
+    box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00;
+  }
+}

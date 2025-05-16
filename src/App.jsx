@@ -1,25 +1,16 @@
-
-import CharacterList from './components/CharacterList'
-import './App.css';
-
-
-const ComponenteConFondo = () => {
-    return (
-      <div className="background-image">
-      </div>
-    );
-  };
-
-  
-
+import Background from "./components/Background";
+import CharacterList from "./components/CharacterList";
+import "./components/styles/GlobalStyles.scss";
 
 function App() {
-  return <div className='background-image text-white'>
-    <h1 className='font-new text-center display-1 py-4'>Rick And Morty</h1>
-    
-  <CharacterList/>
-  </div>;
-  
+  return (
+    <>
+      <Background />
+      <div className="app-content">
+        <CharacterList />
+      </div>
+    </>
+  );
 }
 
 export default App;
